@@ -1,7 +1,7 @@
 import sys
 import dns.resolver
 
-argumentos = sys.argv	# le os argumentos do comando
+argumentos = sys.argv	# le os argumentos do comando 
 try:
     dominio = argumentos[1]
     lista = argumentos[2]
@@ -9,7 +9,7 @@ except:
     print("Faltam argumentos no comando")
     sys.exit(1)
 
-# abre a wordlist
+# abre a wordlist para eventos
 try:
     arquivo = open(lista)
     linhas = arquivo.read().splitlines()
